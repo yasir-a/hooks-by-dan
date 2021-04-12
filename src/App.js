@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Greetings from "./classComp/Greetings";
+import GreetingsF from "./functionalComp/GreetingsF";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="greetings-container">
+      <div className="class-greetings">
+        <p className="heading">Class Component</p>
+        <Greetings name="Mary" />
+      </div>
+      <div className="functional-greetings">
+        <p className="heading">Functional Component</p>
+        <GreetingsF name="Mary" />
+      </div>
     </div>
   );
 }
