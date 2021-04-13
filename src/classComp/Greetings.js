@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { ThemeContextConsumer } from "../context/ThemeContextProvider";
+import { LocalConsumer } from "../context/LocalContextProvider";
 import Row from "./Row";
 class Greetings extends Component {
   constructor(props) {
@@ -48,6 +49,15 @@ class Greetings extends Component {
                   {theme === "light" ? "dark" : "light"}
                 </button>
               </Row>
+              <LocalConsumer>
+                {({ language }) => {
+                  return (
+                    <Row label="Language">
+                      <p>{language}</p>
+                    </Row>
+                  );
+                }}
+              </LocalConsumer>
             </section>
           );
         }}
