@@ -1,9 +1,18 @@
-.row {
+.row-light {
   text-align: center;
   width: 400px;
   min-height: 100px;
   color: black;
-  background-color: darkgray;
+  background-color: lightslategray;
+  box-shadow: 3px 4px 6px #888888;
+}
+
+.row-dark {
+  text-align: center;
+  width: 400px;
+  min-height: 100px;
+  color: white;
+  background-color: darkslategrey;
   box-shadow: 3px 4px 6px #888888;
 }
 
@@ -27,5 +36,4 @@
 }
 .content {
   margin-top: 5px;
-
 }
